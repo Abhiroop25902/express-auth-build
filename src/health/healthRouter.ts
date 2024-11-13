@@ -3,7 +3,8 @@ import express from 'express';
 const healthRouter = express.Router();
 
 healthRouter.get('/', (req, res) => {
-    res.json({
+    res.status(200)
+    .json({
         health: "OK"
     });
 })
