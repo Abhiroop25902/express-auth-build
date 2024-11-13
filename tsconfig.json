@@ -1,11 +1,18 @@
 {
-    "compilerOptions": {
-      "module": "commonjs",
-      "esModuleInterop": true,
-      "target": "es6",
-      "moduleResolution": "node",
-      "sourceMap": true,
-      "outDir": "dist"
-    },
-    "lib": ["es2015"]
-  }
+  "compilerOptions": {
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "target": "es6",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "outDir": "./dist" /* Redirect output structure to the directory. */,
+    "allowJs": true /* Allow javascript files to be compiled. */,
+    "experimentalDecorators": true /* Enables experimental support for ES7 decorators. */,
+    "skipLibCheck": true /* Skip type checking of declaration files. */,
+  },
+  "include": [
+    "src/**/*" // apply with all .ts on src directory
+  ],
+  "exclude": ["node_modules"],
+  "lib": ["es2019"]
+}
