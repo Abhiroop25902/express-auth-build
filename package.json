@@ -7,7 +7,7 @@
     "start-dev": "nodemon src/app.ts",
     "lint": "eslint ./src",
     "start": "node dist/app.js",
-    "prepare": "husky"
+    "prepare": "node .husky/install.mjs"
   },
   "keywords": [],
   "author": "",
